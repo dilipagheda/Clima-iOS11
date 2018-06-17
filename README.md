@@ -1,44 +1,13 @@
 # Clima
-Learn to make iOS Apps with [The App Brewery](https://www.appbrewery.co) 📱 | Project Stub | (Swift 4.0/Xcode 9) - Clima App
+Completed the first iteration of the project called Clima based on a iOS app development bootcamp program by the london app brewery.(https://www.appbrewery.co). It uses (Swift 4.0/Xcode 9).
 
-Beginner: Download the starter project files as .zip and extract the files to your desktop.
 
-Pro: Git clone to your Xcode projects folder.
-
-## Finished App
+## First Iteration of the App
 ![Finished App](https://github.com/londonappbrewery/Images/blob/master/Clima.gif)
 
-## Fix for Cocoapods v1.0.1 and below
+## Planned features for the next iteration
+1) Implement a toggle to change a temperature for celcius to faranheit and vice a versa
+2) Implement validations that will check if cityName entered by user is valid and that it fetches the valid weather data. if not, show error message to the user
+3) Implement UV Index screen
 
-```ruby
-post_install do |installer|
-  installer.pods_project.targets.each do |target|
-    target.build_configurations.each do |config|
-      config.build_settings['SWIFT_VERSION'] = '3.0'
-      config.build_settings['MACOSX_DEPLOYMENT_TARGET'] = '10.10'
-    end
-  end
-end
-```
-
-## Fix for App Transport Security Override
-
-```XML
-	<key>NSAppTransportSecurity</key>
-	<dict>
-		<key>NSExceptionDomains</key>
-		<dict>
-			<key>openweathermap.org</key>
-			<dict>
-				<key>NSIncludesSubdomains</key>
-				<true/>
-				<key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
-				<true/>
-			</dict>
-		</dict>
-	</dict>
-```
-
-
-Copyright © The App Brewery
 
